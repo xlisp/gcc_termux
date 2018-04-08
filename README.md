@@ -1,13 +1,20 @@
 
 From now on im using apt for updates
 add 
+
+```bash
 deb [trusted=yes] https://its-pointless.github.io/files/  termux extras
-to sources.list or add a file with .list suffix in $PREFIX/etc/apt/sources.list.d/
+```
+
+to sources.list or add a file with .list suffix in ` $PREFIX/etc/apt/sources.list.d/ `
 gpg key is https://its-pointless.github.io/pointless.gpg
 if not installed install gnupg
+
+```bash
 apt-get install gnupg
 apt-key add pointless.gpg will add the key to apt
 apt-get update
+```
 
 or use https://its-pointless.github.io/setup-pointless-repo.sh
 
