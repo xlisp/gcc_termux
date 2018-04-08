@@ -216,7 +216,7 @@ apt install libgfortran libgfortran4
 apt install libgomp
 apt install openblas
 
-LDFLAGS=" -lm -lcompiler_rt" pip2.7 install scipy
+apt install scipy or apt install python2-scipy # 不用自己编译 LDFLAGS=" -lm -lcompiler_rt" pip2.7 install scipy
 
 ```
 
