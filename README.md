@@ -212,7 +212,8 @@ numpy and scipy.
 ```bash
 
 apt install openblas
-apt install libgfortran
+apt install libgfortran libgfortran4
+apt install libgomp
 apt install openblas
 
 LDFLAGS=" -lm -lcompiler_rt" pip2.7 install scipy
