@@ -12,7 +12,7 @@ if not installed install gnupg
 
 ```bash
 apt-get install gnupg
-apt-key add pointless.gpg will add the key to apt
+apt-key add pointless.gpg ## will add the key to apt
 apt-get update
 ```
 
@@ -208,6 +208,16 @@ only gcc.
 
 For scipy to work you need blaslib(openblas, reference blas +lapack or atlas) libgfortran
 numpy and scipy.
+
+```bash
+
+apt install openblas
+apt install libgfortran
+apt install openblas
+
+LDFLAGS=" -lm -lcompiler_rt" pip2.7 install scipy
+
+```
 
 If you want to do this yourself its not hard.
 https://github.com/xianyi/OpenBLAS/wiki/How-to-build-OpenBLAS-for-Android
