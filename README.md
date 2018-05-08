@@ -233,3 +233,26 @@ than lapack.
 
 LDFLAGS when compiling scipy and numpy for distribution is important. You can compile on android 6.0 and it might not 
 work on 5.1 because the linker is different. 
+
+#### julia install 
+
+* https://askubuntu.com/questions/141370/how-to-fix-a-broken-package-when-apt-get-install-f-does-not-work
+
+```bash
+
+## 处理 ` apt install libgfortran libgfortran5` 安装失败的问题
+$ dpkg -i --force-overwrite /data/data/com.termux/files/usr/var/cache/apt/archives/libgfortran5_8.1.0_aarch64.deb
+
+➜  ~ julia
+               _
+   _       _ _(_)_     |  A fresh approach to technical computing
+  (_)     | (_) (_)    |  Documentation: https://docs.julialang.org
+   _ _   _| |_  __ _   |  Type "?help" for help.
+  | | | | | | |/ _` |  |
+  | | |_| | | | (_| |  |  Version 0.7.0-DEV.5015 (2018-05-05 13:38 UTC)
+ _/ |\__'_|_|_|\__'_|  |  android-termux/3bd8503c61* (fork: 8 commits, 3 days)
+|__/                   |  aarch64--linux-android
+
+julia>
+
+```
