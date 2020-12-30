@@ -11,9 +11,17 @@ gpg key is https://its-pointless.github.io/pointless.gpg
 if not installed install gnupg
 
 ```bash
+echo "deb [trusted=yes] https://its-pointless.github.io/files/  termux extras" >> $PREFIX/etc/apt/sources.list.d/sources.list
+
 apt-get install gnupg
+wget https://its-pointless.github.io/pointless.gpg
 apt-key add pointless.gpg ## will add the key to apt
 apt-get update
+
+## 
+wget https://its-pointless.github.io/setup-pointless-repo.sh
+bash setup-pointless-repo.sh
+
 ```
 
 or use https://its-pointless.github.io/setup-pointless-repo.sh
@@ -212,9 +220,8 @@ numpy and scipy.
 ```bash
 
 apt install openblas
-apt install libgfortran libgfortran5
-apt install libgomp
-apt install openblas
+apt install  libgfortran5
+apt install libgomp-10
 
 apt install scipy or apt install python2-scipy # 不用自己编译 LDFLAGS=" -lm -lcompiler_rt" pip2.7 install scipy
 
