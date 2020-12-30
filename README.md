@@ -223,7 +223,13 @@ apt install openblas
 apt install  libgfortran5
 apt install libgomp-10
 
-apt install scipy or apt install python2-scipy # 不用自己编译 LDFLAGS=" -lm -lcompiler_rt" pip2.7 install scipy
+apt install scipy && apt install python2-scipy # 不用自己编译 LDFLAGS=" -lm -lcompiler_rt" pip2.7 install scipy
+
+apt install clang  fftw libzmq freetype libpng pkg-config libcrypt
+
+LDFLAGS="-lm -lcompiler_rt" pip install jupyter
+LDFLAGS="-lm -lcompiler_rt" pip install  matplotlib
+
 
 ```
 
