@@ -1,4 +1,23 @@
 
+## For mcp 2025 update
+
+```
+pkg install vim git openssh python
+
+pkg install  rust cmake clang  fftw libzmq freetype libpng pkg-config libcrypt
+
+pip install "mcp[cli]" 
+
+
+pkg install  matplotlib
+
+
+pip install  pandas
+
+```
+
+---
+
 From now on im using apt for updates
 add 
 
@@ -269,3 +288,4 @@ $ dpkg -i --force-overwrite /data/data/com.termux/files/usr/var/cache/apt/archiv
 julia>
 
 ```
+
