@@ -1,5 +1,5 @@
 
-## For mcp 2025 update
+## For mcp 2025 update, test pass
 
 ```
 pkg install vim git openssh python
@@ -13,6 +13,8 @@ pkg install  matplotlib
 
 
 pip install  pandas
+
+pip install jupyter
 
 ```
 
